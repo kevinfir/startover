@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第二個模板</title>
+    {% load static %}
+    <link href="{%static 'css/style.css'%}" rel="stylesheet"
+    type="text/css"/>
+</head>
+<body>
+    <div id="home">
+        <img src="{%static 'images/R.png'%}" alt="歡迎光臨"
+        width="48" height="48"/>
+        <span class="info">歡迎光臨:{{username}}</span>
+  
+    <h2>現在時刻:{{now}}</h2>
+    </div>
+</body>
+</html>
